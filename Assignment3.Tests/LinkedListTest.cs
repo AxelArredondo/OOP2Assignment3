@@ -24,7 +24,7 @@ namespace Assignment3.Tests
         [Test]
         public void TestAddFirst()
         {
-            var user = new User(1, "Alice", "alice@mail.com", "1234");
+            var user = new User(1, "John", "john@mail.com", "1234");
             list.AddFirst(user);
 
             Assert.AreEqual(1, list.Count());
@@ -34,7 +34,7 @@ namespace Assignment3.Tests
         [Test]
         public void TestAddLast()
         {
-            var user1 = new User(1, "Alice", "alice@mail.com", "1234");
+            var user1 = new User(1, "John", "alice@mail.com", "1234");
             var user2 = new User(2, "Bob", "bob@mail.com", "5678");
 
             list.AddLast(user1);
@@ -47,7 +47,7 @@ namespace Assignment3.Tests
         [Test]
         public void TestAddAtIndex()
         {
-            var user1 = new User(1, "Alice", "alice@mail.com", "1234");
+            var user1 = new User(1, "John", "John@mail.com", "1234");
             var user2 = new User(2, "Bob", "bob@mail.com", "5678");
             var user3 = new User(3, "Charlie", "charlie@mail.com", "abcd");
 
@@ -61,7 +61,7 @@ namespace Assignment3.Tests
         [Test]
         public void TestReplace()
         {
-            var user1 = new User(1, "Alice", "alice@mail.com", "1234");
+            var user1 = new User(1, "John", "john@mail.com", "1234");
             var user2 = new User(2, "Bob", "bob@mail.com", "5678");
 
             list.AddLast(user1);
@@ -73,7 +73,7 @@ namespace Assignment3.Tests
         [Test]
         public void TestRemoveFirst()
         {
-            var user1 = new User(1, "Alice", "alice@mail.com", "1234");
+            var user1 = new User(1, "John", "john@mail.com", "1234");
             var user2 = new User(2, "Bob", "bob@mail.com", "5678");
 
             list.AddLast(user1);
@@ -87,7 +87,7 @@ namespace Assignment3.Tests
         [Test]
         public void TestRemoveLast()
         {
-            var user1 = new User(1, "Alice", "alice@mail.com", "1234");
+            var user1 = new User(1, "John", "john@mail.com", "1234");
             var user2 = new User(2, "Bob", "bob@mail.com", "5678");
 
             list.AddLast(user1);
@@ -101,7 +101,7 @@ namespace Assignment3.Tests
         [Test]
         public void TestRemoveAtIndex()
         {
-            var user1 = new User(1, "Alice", "alice@mail.com", "1234");
+            var user1 = new User(1, "John", "john@mail.com", "1234");
             var user2 = new User(2, "Bob", "bob@mail.com", "5678");
             var user3 = new User(3, "Charlie", "charlie@mail.com", "abcd");
 
@@ -116,7 +116,7 @@ namespace Assignment3.Tests
         [Test]
         public void TestIndexOf()
         {
-            var user1 = new User(1, "Alice", "alice@mail.com", "1234");
+            var user1 = new User(1, "John", "alice@mail.com", "1234");
             var user2 = new User(2, "Bob", "bob@mail.com", "5678");
 
             list.AddLast(user1);
@@ -128,7 +128,7 @@ namespace Assignment3.Tests
         [Test]
         public void TestContains()
         {
-            var user = new User(1, "Alice", "alice@mail.com", "1234");
+            var user = new User(1, "John", "alice@mail.com", "1234");
 
             list.AddLast(user);
 
@@ -138,7 +138,7 @@ namespace Assignment3.Tests
         [Test]
         public void TestClear()
         {
-            list.AddLast(new User(1, "Alice", "alice@mail.com", "1234"));
+            list.AddLast(new User(1, "John", "alice@mail.com", "1234"));
             list.Clear();
 
             Assert.AreEqual(0, list.Count());
